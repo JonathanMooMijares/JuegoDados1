@@ -23,6 +23,7 @@ public class Jugada {
     }
 
     private byte turnarJugador(Jugador jugadorEnTurno, Dado d1, Dado d2){
+
         return jugadorEnTurno.lanzaDados(d1, d2);
     }
 
