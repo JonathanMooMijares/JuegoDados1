@@ -16,7 +16,6 @@ public class Jugada {
         //Recibir los objetos necesarios para la jugada
         //Lanzar los dados por turno
         puntosJ1 = this.turnarJugador(jugador1, dado1, dado2);
-
         puntosJ2 = this.turnarJugador(jugador2, dado1, dado2);
 
         this.determinarGanador(jugador1, puntosJ1, jugador2, puntosJ2);
