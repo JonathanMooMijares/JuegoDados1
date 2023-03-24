@@ -23,10 +23,11 @@ public class JuegoDado {
         Jugada jugadaActual = new Jugada();
 
         if (this.bandJugador) {
-
-
             jugadaActual.iniciarJugada(this.jugador1, this.jugador2, this.dado1, this.dado2);
                 this.dado1, this.dado2);
+        }
+        else{
+            jugadaActual.iniciarJugada(this.jugador2, this.jugador1)
         }
     }
     public void iniciarJuego() {
@@ -45,8 +46,8 @@ public class JuegoDado {
         do {
             iniciarJugada();
 
-            cantidadJugada++;
-        } while ();
+            this.cantidadJugada++;
+        } while ((this.marcadorJugador1 == 5) || (this.marcadorJugador2 ==5));
 
         elegirPrimerLanzador();
 
